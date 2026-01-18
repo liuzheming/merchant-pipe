@@ -1,6 +1,6 @@
 package com.merchant.common.utils;
 
-import com.merchant.kernel.common.constant.UserInfo;
+import com.merchant.common.constant.UserInfo;
 
 public class UserManager {
     private static final ThreadLocal<UserInfo> USER_HOLDER = new ThreadLocal<>();
