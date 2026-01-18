@@ -24,24 +24,21 @@ flowchart TB
 
     subgraph L2["Runtime 层"]
         Pipe["Pipe"]
-        Stage["Stage"]
         Action["Action"]
         Trigger["Trigger Center"]
     end
 
     subgraph L3["Data/Infra 层"]
-        Repo["merchant-pipe-repo (jOOQ)"]
         DB[(MySQL)]
-        ZSET[(Redis ZSET)]
+        ZSET[(Redis)]
     end
 
     API --> Pipe
-    Pipe --> Stage --> Action
+    Pipe --> Action
     Trigger --> Pipe
-    Trigger --> Stage
     Trigger --> Action
 
-    Action --> Repo --> DB
+    Action --> DB
     Trigger --> ZSET
 ```
 
@@ -52,25 +49,7 @@ flowchart TB
 flowchart LR
     subgraph Pipe["Pipe"]
         direction LR
-        subgraph Stage1["Stage 1"]
-            direction TB
-            A1["Action A1"]
-            A2["Action A2"]
-            A1 ~~~ A2
-        end
-        subgraph Stage2["Stage 2"]
-            direction TB
-            B1["Action B1"]
-            B2["Action B2"]
-            B1 ~~~ B2
-        end
-        subgraph Stage3["Stage 3"]
-            direction TB
-            C1["Action C1"]
-            C2["Action C2"]
-            C1 ~~~ C2
-        end
-        Stage1 --> Stage2 --> Stage3
+        A1["Action 1"] --> A2["Action 2"] --> A3["Action 3"] --> A4["Action 4"]
     end
 ```
 
