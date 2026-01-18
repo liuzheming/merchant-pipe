@@ -1,6 +1,6 @@
 package com.merchant.pipe.pipe.def;
 
-import com.merchant.kernel.pipe.stage.StageDef;
+import com.merchant.pipe.stage.StageDef;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

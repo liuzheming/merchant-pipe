@@ -1,6 +1,6 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.pipe.action.dto.ActionDTO;
+import com.merchant.pipe.action.dto.ActionDTO;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 

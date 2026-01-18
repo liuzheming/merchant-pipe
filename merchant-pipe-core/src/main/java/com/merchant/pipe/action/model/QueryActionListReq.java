@@ -1,6 +1,6 @@
 package com.merchant.pipe.action.model;
 
-import com.merchant.kernel.pipe.action.enums.ProcessActionDefGroupEnum;
+import com.merchant.pipe.action.enums.ProcessActionDefGroupEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

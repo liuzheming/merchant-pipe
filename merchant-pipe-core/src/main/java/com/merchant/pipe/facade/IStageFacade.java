@@ -1,7 +1,7 @@
 package com.merchant.pipe.facade;
 
-import com.merchant.kernel.pipe.pipe.Result;
-import com.merchant.kernel.pipe.stage.StageDTO;
+import com.merchant.pipe.pipe.Result;
+import com.merchant.pipe.stage.StageDTO;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.merchant.pipe.action;
 
-import com.merchant.kernel.enums.ExecModeEnum;
-import com.merchant.kernel.pipe.ActionStatusEnum;
+import com.merchant.enums.ExecModeEnum;
+import com.merchant.pipe.ActionStatusEnum;
 
 import java.util.List;
 

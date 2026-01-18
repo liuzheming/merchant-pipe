@@ -1,9 +1,9 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.common.utils.BeanCopyUtils;
-import com.merchant.kernel.pipe.facade.IActionFacade;
-import com.merchant.kernel.pipe.facade.IStageFacade;
-import com.merchant.kernel.pipe.pipe.Result;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.facade.IStageFacade;
+import com.merchant.pipe.pipe.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.pipe.action.ActionDef;
+import com.merchant.pipe.action.ActionDef;
 import lombok.Data;
 
 import java.util.ArrayList;

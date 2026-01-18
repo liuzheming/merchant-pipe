@@ -1,6 +1,6 @@
 package com.merchant.common.utils;
 
-import com.merchant.kernel.common.exception.ServiceException;
+import com.merchant.common.exception.ServiceException;
 
 public class CheckUtil {
     private CheckUtil() {

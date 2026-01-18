@@ -1,6 +1,6 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.PipeContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 

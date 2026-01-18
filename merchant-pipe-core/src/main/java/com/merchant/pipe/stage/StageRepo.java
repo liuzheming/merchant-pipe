@@ -1,9 +1,9 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.common.utils.BeanCopyUtils;
-import com.merchant.kernel.common.utils.CheckUtil;
-import com.merchant.kernel.pipe.db.tables.pojos.ProcessActionStage;
-import com.merchant.kernel.pipe.db.tables.records.ProcessActionStageRecord;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.CheckUtil;
+import com.merchant.pipe.db.tables.pojos.ProcessActionStage;
+import com.merchant.pipe.db.tables.records.ProcessActionStageRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.merchant.kernel.pipe.db.Tables.PROCESS_ACTION_STAGE;
+import static com.merchant.pipe.db.Tables.PROCESS_ACTION_STAGE;
 
 
 /**

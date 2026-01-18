@@ -1,7 +1,7 @@
 package com.merchant.pipe.facade.model;
 
 import com.google.common.collect.Lists;
-import com.merchant.kernel.common.utils.JsonUtils;
+import com.merchant.common.utils.JsonUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

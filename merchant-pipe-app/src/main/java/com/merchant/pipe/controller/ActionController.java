@@ -1,9 +1,9 @@
 package com.merchant.pipe.controller;
 
-import com.merchant.kernel.common.response.ResponseResult;
-import com.merchant.kernel.pipe.action.dto.ActionDTO;
-import com.merchant.kernel.pipe.facade.IActionFacade;
-import com.merchant.kernel.pipe.pipe.Result;
+import com.merchant.common.response.ResponseResult;
+import com.merchant.pipe.action.dto.ActionDTO;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.pipe.Result;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

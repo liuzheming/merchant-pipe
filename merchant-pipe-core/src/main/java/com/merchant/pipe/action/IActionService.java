@@ -1,6 +1,6 @@
 package com.merchant.pipe.action;
 
-import com.merchant.kernel.enums.ExecModeEnum;
+import com.merchant.enums.ExecModeEnum;
 
 /**
  * Description:

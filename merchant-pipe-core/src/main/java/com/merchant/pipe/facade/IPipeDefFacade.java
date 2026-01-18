@@ -1,9 +1,9 @@
 package com.merchant.pipe.facade;
 
-import com.merchant.kernel.common.response.PageResult;
-import com.merchant.kernel.pipe.facade.model.CreatePipeReq;
-import com.merchant.kernel.pipe.facade.model.EditPipeReq;
-import com.merchant.kernel.pipe.pipe.def.PipeDef;
+import com.merchant.common.response.PageResult;
+import com.merchant.pipe.facade.model.CreatePipeReq;
+import com.merchant.pipe.facade.model.EditPipeReq;
+import com.merchant.pipe.pipe.def.PipeDef;
 
 /**
  * Create on 2023/5/4

@@ -1,11 +1,11 @@
 package com.merchant.pipe.pipe;
 
-import com.merchant.kernel.common.utils.BeanCopyUtils;
-import com.merchant.kernel.common.utils.JsonUtils;
-import com.merchant.kernel.pipe.db.tables.records.ProcessActionPipeRecord;
-import com.merchant.kernel.pipe.pipe.def.PipeDef;
-import com.merchant.kernel.trigger.ITriggerCenter;
-import com.merchant.kernel.trigger.TriggerEventType;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.JsonUtils;
+import com.merchant.pipe.db.tables.records.ProcessActionPipeRecord;
+import com.merchant.pipe.pipe.def.PipeDef;
+import com.merchant.trigger.ITriggerCenter;
+import com.merchant.trigger.TriggerEventType;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationContext;

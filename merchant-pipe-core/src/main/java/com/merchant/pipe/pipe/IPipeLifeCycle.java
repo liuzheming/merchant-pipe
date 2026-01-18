@@ -1,6 +1,6 @@
 package com.merchant.pipe.pipe;
 
-import com.merchant.kernel.pipe.pipe.def.PipeDef;
+import com.merchant.pipe.pipe.def.PipeDef;
 
 import java.time.LocalDateTime;
 

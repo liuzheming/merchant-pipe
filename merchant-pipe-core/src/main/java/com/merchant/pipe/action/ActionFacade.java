@@ -1,9 +1,9 @@
 package com.merchant.pipe.action;
 
-import com.merchant.kernel.pipe.db.tables.pojos.ProcessAction;
-import com.merchant.kernel.pipe.facade.IActionFacade;
-import com.merchant.kernel.pipe.pipe.Result;
-import com.merchant.kernel.pipe.action.dto.ActionDTO;
+import com.merchant.pipe.db.tables.pojos.ProcessAction;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.pipe.Result;
+import com.merchant.pipe.action.dto.ActionDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

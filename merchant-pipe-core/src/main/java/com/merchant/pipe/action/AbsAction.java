@@ -1,20 +1,20 @@
 package com.merchant.pipe.action;
 
-import static com.merchant.kernel.pipe.ActionStatusEnum.EXEC_FAIL;
-import static com.merchant.kernel.pipe.ActionStatusEnum.EXEC_SKIP;
-import static com.merchant.kernel.pipe.ActionStatusEnum.EXEC_SUCC;
-import static com.merchant.kernel.pipe.ActionStatusEnum.INIT_SUCC;
+import static com.merchant.pipe.ActionStatusEnum.EXEC_FAIL;
+import static com.merchant.pipe.ActionStatusEnum.EXEC_SKIP;
+import static com.merchant.pipe.ActionStatusEnum.EXEC_SUCC;
+import static com.merchant.pipe.ActionStatusEnum.INIT_SUCC;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.google.common.collect.Lists;
-import com.merchant.kernel.common.constant.UserInfo;
-import com.merchant.kernel.common.exception.ServiceException;
-import com.merchant.kernel.common.utils.UserManager;
-import com.merchant.kernel.enums.ExecModeEnum;
-import com.merchant.kernel.pipe.ActionSkipException;
-import com.merchant.kernel.pipe.ActionStatusEnum;
-import com.merchant.kernel.pipe.ActionStuckException;
-import com.merchant.kernel.pipe.pipe.BuildResult;
+import com.merchant.common.constant.UserInfo;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.UserManager;
+import com.merchant.enums.ExecModeEnum;
+import com.merchant.pipe.ActionSkipException;
+import com.merchant.pipe.ActionStatusEnum;
+import com.merchant.pipe.ActionStuckException;
+import com.merchant.pipe.pipe.BuildResult;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;

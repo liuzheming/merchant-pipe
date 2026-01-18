@@ -1,6 +1,6 @@
 package com.merchant.pipe.pipe;
 
-import com.merchant.kernel.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.BeanCopyUtils;
 import lombok.Data;
 
 import java.time.LocalDateTime;

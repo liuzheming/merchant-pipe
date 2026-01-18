@@ -1,10 +1,10 @@
 package com.merchant.pipe.pipe.def;
 
-import com.merchant.kernel.common.constant.DbConst;
-import com.merchant.kernel.common.utils.BeanCopyUtils;
-import com.merchant.kernel.pipe.db.Tables;
-import com.merchant.kernel.pipe.db.tables.pojos.ProcessActionPipeDef;
-import com.merchant.kernel.pipe.db.tables.records.ProcessActionPipeDefRecord;
+import com.merchant.common.constant.DbConst;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.pipe.db.Tables;
+import com.merchant.pipe.db.tables.pojos.ProcessActionPipeDef;
+import com.merchant.pipe.db.tables.records.ProcessActionPipeDefRecord;
 import org.apache.commons.lang3.StringUtils;
 import org.jooq.*;
 import org.jooq.impl.DSL;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.List;
 
-import static com.merchant.kernel.pipe.db.Tables.PROCESS_ACTION_PIPE_DEF;
+import static com.merchant.pipe.db.Tables.PROCESS_ACTION_PIPE_DEF;
 
 /**
  * Create on 2023/4/30

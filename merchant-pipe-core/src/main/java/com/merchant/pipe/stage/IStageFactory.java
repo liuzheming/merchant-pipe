@@ -1,6 +1,6 @@
 package com.merchant.pipe.stage;
 
-import com.merchant.kernel.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.PipeContext;
 
 /**
  * Create on 2023/5/1
