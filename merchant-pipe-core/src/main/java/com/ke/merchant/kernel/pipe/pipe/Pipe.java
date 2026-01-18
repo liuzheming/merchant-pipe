@@ -1,18 +1,18 @@
-package com.ke.merchant.kernel.pipe.pipe;
+package com.merchant.pipe.pipe;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.MsgBuilder;
-import com.ke.merchant.kernel.common.utils.RedisKeyUtils;
-import com.ke.merchant.kernel.pipe.ActionException;
-import com.ke.merchant.kernel.pipe.action.ActionRepo;
-import com.ke.merchant.kernel.pipe.action.IActionFactory;
-import com.ke.merchant.kernel.pipe.pipe.def.PipeDef;
-import com.ke.merchant.kernel.pipe.stage.Stage;
-import com.ke.merchant.kernel.pipe.stage.StageDef;
-import com.ke.merchant.kernel.pipe.stage.StageFactory;
-import com.ke.merchant.kernel.rpc.sdk.SeqGenerateRpc;
-import com.ke.merchant.kernel.trigger.ITriggerCenter;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.MsgBuilder;
+import com.merchant.common.utils.RedisKeyUtils;
+import com.merchant.pipe.ActionException;
+import com.merchant.pipe.action.ActionRepo;
+import com.merchant.pipe.action.IActionFactory;
+import com.merchant.pipe.pipe.def.PipeDef;
+import com.merchant.pipe.stage.Stage;
+import com.merchant.pipe.stage.StageDef;
+import com.merchant.pipe.stage.StageFactory;
+import com.merchant.rpc.sdk.SeqGenerateRpc;
+import com.merchant.trigger.ITriggerCenter;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
@@ -26,9 +26,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static com.ke.merchant.kernel.pipe.action.AbsAction.LOCK_NAME;
-import static com.ke.merchant.kernel.pipe.pipe.PipeStatusEnum.*;
-import static com.ke.merchant.kernel.trigger.TriggerEventType.STAGE_START_EVENT;
+import static com.merchant.pipe.action.AbsAction.LOCK_NAME;
+import static com.merchant.pipe.pipe.PipeStatusEnum.*;
+import static com.merchant.trigger.TriggerEventType.STAGE_START_EVENT;
 
 /**
  * Create on 2022/12/4

@@ -1,13 +1,13 @@
-package com.ke.merchant.kernel.pipe.pipe;
+package com.merchant.pipe.pipe;
 
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.MsgBuilder;
-import com.ke.merchant.kernel.pipe.action.ActionService;
-import com.ke.merchant.kernel.pipe.action.model.QueryActionListReq;
-import com.ke.merchant.kernel.pipe.facade.IPipeDefFacade;
-import com.ke.merchant.kernel.pipe.facade.IPipeFacade;
-import com.ke.merchant.kernel.pipe.pipe.def.PipeDef;
-import com.ke.merchant.kernel.pipe.stage.StageDef;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.MsgBuilder;
+import com.merchant.pipe.action.ActionService;
+import com.merchant.pipe.action.model.QueryActionListReq;
+import com.merchant.pipe.facade.IPipeDefFacade;
+import com.merchant.pipe.facade.IPipeFacade;
+import com.merchant.pipe.pipe.def.PipeDef;
+import com.merchant.pipe.stage.StageDef;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

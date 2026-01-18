@@ -1,7 +1,7 @@
-package com.ke.merchant.kernel.pipe.facade.model;
+package com.merchant.pipe.facade.model;
 
 import com.google.common.collect.Lists;
-import com.ke.merchant.kernel.common.utils.JsonUtils;
+import com.merchant.common.utils.JsonUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -102,14 +102,14 @@ public class AdvancedTransformer {
     public static void main(String[] args) {
         OriginGroup group1 = new OriginGroup();
         List<ActionDef> actionDefs1 = new ArrayList<>();
-        actionDefs1.add(new ActionDef("任务1-1", "com.ke.merchant.kernel.controller.web.kesign.Action1"));
-        actionDefs1.add(new ActionDef("任务1-2", "com.ke.merchant.kernel.controller.web.kesign.Action2"));
+        actionDefs1.add(new ActionDef("任务1-1", "com.merchant.controller.web.kesign.Action1"));
+        actionDefs1.add(new ActionDef("任务1-2", "com.merchant.controller.web.kesign.Action2"));
         group1.setActionDefs(actionDefs1);
 
         OriginGroup group2 = new OriginGroup();
         List<ActionDef> actionDefs2 = new ArrayList<>();
-        actionDefs2.add(new ActionDef("任务2-1", "com.ke.merchant.kernel.controller.web.kesign.Action3"));
-        actionDefs2.add(new ActionDef("任务2-2", "com.ke.merchant.kernel.controller.web.kesign.Action4"));
+        actionDefs2.add(new ActionDef("任务2-1", "com.merchant.controller.web.kesign.Action3"));
+        actionDefs2.add(new ActionDef("任务2-2", "com.merchant.controller.web.kesign.Action4"));
         group2.setActionDefs(actionDefs2);
 
         List<TargetGroup> result = transform(Lists.asList(group1, new OriginGroup[]{group2}));
@@ -121,35 +121,35 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"选择目标6级组织\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.PreStoreOrgTransferAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.PreStoreOrgTransferAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"城市人事选择翻牌后的目标2-6级组织\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"新房合同同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.NewHouseContractSyncForFchChangeAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.NewHouseContractSyncForFchChangeAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"渠道合作框架协议同步给新房合同系统\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"组织门店平移\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.MoveStoreOrgWithResOrderAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.MoveStoreOrgWithResOrderAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"将组织门店从原人事2-6级组织平移到新2-6级组织下（只用storeId）\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"等待理房通/电子章审核通过\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.WaitStoreEhomePayAndEsealCheckPassesAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.WaitStoreEhomePayAndEsealCheckPassesAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"等待门店申请的理房通/电子章均审核通过(不用动，需要的数据包里面的内容)\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"切换分账主体\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.SwitchOpForStoreAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.SwitchOpForStoreAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"zhangting150\",\n" +
             "                \"tip\": \"更新为最新设置的分账主体\",\n" +
@@ -157,7 +157,7 @@ public class AdvancedTransformer {
             "            },\n" +
             "            {\n" +
             "                \"name\": \"设置门店合作主体\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.SetStoreOwnerSubjectAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.SetStoreOwnerSubjectAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"zhangting150\",\n" +
             "                \"tip\": \"更新为最新设置的商户合作主体\",\n" +
@@ -165,14 +165,14 @@ public class AdvancedTransformer {
             "            },\n" +
             "            {\n" +
             "                \"name\": \"保底费同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.MinimumFeeSyncAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.MinimumFeeSyncAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"同步换改并后每个门店的保底费明细\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"创建电子章收费订单\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.FinanceEsealChargeAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.FinanceEsealChargeAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"liuzheming004\",\n" +
             "                \"tip\": \"跟资金交互生成对应的电子章费应收订单\",\n" +
@@ -184,7 +184,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"标准费率同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.StoreStandardSyncFeeRateV2Action\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.StoreStandardSyncFeeRateV2Action\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"同步换改并后每个门店的费率明细\",\n" +
             "                \"extData\": {}\n" +
@@ -195,7 +195,7 @@ public class AdvancedTransformer {
             "            \"actionDefs\": [\n" +
             "                {\n" +
             "                    \"name\": \"处理历史优惠内容\",\n" +
-            "                    \"clazz\": \"com.ke.merchant.biz.sync.action.HistoricalRateDiscountsAction\",\n" +
+            "                    \"clazz\": \"com.merchant.biz.sync.action.HistoricalRateDiscountsAction\",\n" +
             "                    \"execMode\": \"AUTO\",\n" +
             "                    \"tip\": \"处理历史优惠内容\",\n" +
             "                    \"extData\": {}\n" +
@@ -206,7 +206,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"优惠券同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.FeeRateDiscountV2Action\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.FeeRateDiscountV2Action\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"优惠券同步\",\n" +
             "                \"extData\": {}\n" +
@@ -217,7 +217,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"费率截断\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.CutOffPercentageFeeRateActionV2\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.CutOffPercentageFeeRateActionV2\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"费率截断\",\n" +
             "                \"extData\": {}\n" +
@@ -243,35 +243,35 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"选择目标6级组织\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.PreStoreOrgTransferAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.PreStoreOrgTransferAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"城市人事选择翻牌后的目标2-6级组织\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"新房合同同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.NewHouseContractSyncForFchChangeAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.NewHouseContractSyncForFchChangeAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"渠道合作框架协议同步给新房合同系统\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"组织门店平移\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.MoveStoreOrgWithResOrderAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.MoveStoreOrgWithResOrderAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"将组织门店从原人事2-6级组织平移到新2-6级组织下（只用storeId）\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"等待理房通/电子章审核通过\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.WaitStoreEhomePayAndEsealCheckPassesAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.WaitStoreEhomePayAndEsealCheckPassesAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"等待门店申请的理房通/电子章均审核通过(不用动，需要的数据包里面的内容)\",\n" +
             "                \"extData\": {}\n" +
             "            },\n" +
             "            {\n" +
             "                \"name\": \"切换分账主体\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.SwitchOpForStoreAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.SwitchOpForStoreAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"zhangting150\",\n" +
             "                \"tip\": \"更新为最新设置的分账主体\",\n" +
@@ -279,7 +279,7 @@ public class AdvancedTransformer {
             "            },\n" +
             "            {\n" +
             "                \"name\": \"设置门店合作主体\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.changebrand.action.SetStoreOwnerSubjectAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.changebrand.action.SetStoreOwnerSubjectAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"zhangting150\",\n" +
             "                \"tip\": \"更新为最新设置的商户合作主体\",\n" +
@@ -287,7 +287,7 @@ public class AdvancedTransformer {
             "            },\n" +
             "            {\n" +
             "                \"name\": \"创建电子章收费订单\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.FinanceEsealChargeAction\",\n" +
+            "                \"clazz\": \"com.merchant.biz.acn.impl.flow.franchise.storeChangeSign.action.FinanceEsealChargeAction\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"adminAccounts\": \"liuzheming004\",\n" +
             "                \"tip\": \"跟资金交互生成对应的电子章费应收订单\",\n" +
@@ -299,7 +299,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"标准费率同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.StoreStandardSyncFeeRateV2Action\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.StoreStandardSyncFeeRateV2Action\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"同步换改并后每个门店的费率明细\",\n" +
             "                \"extData\": {}\n" +
@@ -310,7 +310,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"优惠券同步\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.FeeRateDiscountV2Action\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.FeeRateDiscountV2Action\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"优惠券同步\",\n" +
             "                \"extData\": {}\n" +
@@ -321,7 +321,7 @@ public class AdvancedTransformer {
             "        \"actionDefs\": [\n" +
             "            {\n" +
             "                \"name\": \"费率截断\",\n" +
-            "                \"clazz\": \"com.ke.merchant.biz.sync.action.CutOffPercentageFeeRateActionV2\",\n" +
+            "                \"clazz\": \"com.merchant.biz.sync.action.CutOffPercentageFeeRateActionV2\",\n" +
             "                \"execMode\": \"AUTO\",\n" +
             "                \"tip\": \"费率截断\",\n" +
             "                \"extData\": {}\n" +

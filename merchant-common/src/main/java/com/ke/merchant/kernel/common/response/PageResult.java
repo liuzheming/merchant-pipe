@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.response;
+package com.merchant.common.response;
 
 import java.util.List;
 

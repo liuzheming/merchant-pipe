@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.facade.model;
+package com.merchant.pipe.facade.model;
 
 import lombok.Data;
 

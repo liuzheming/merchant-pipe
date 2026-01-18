@@ -9,7 +9,7 @@
 
 ## 模块结构
 - `merchant-common`：基础工具与通用类型
-- `merchant-pipe-repo`：jOOQ 生成代码（`com.ke.merchant.kernel.pipe.db`）
+- `merchant-pipe-repo`：jOOQ 生成代码（`com.merchant.pipe.db`）
 - `merchant-pipe-core`：pipe/action/stage/trigger 内核
 - `merchant-pipe-app`：HTTP 接口与运行容器
 

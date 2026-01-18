@@ -1,6 +1,6 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
-import com.ke.merchant.kernel.enums.ExecModeEnum;
+import com.merchant.enums.ExecModeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

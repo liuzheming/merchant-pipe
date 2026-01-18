@@ -1,17 +1,17 @@
-package com.ke.merchant.kernel.trigger;
+package com.merchant.trigger;
 
-import static com.ke.merchant.kernel.trigger.TriggerEventType.ACTION_START_EVENT;
-import static com.ke.merchant.kernel.trigger.TriggerEventType.PIPE_START_EVENT;
-import static com.ke.merchant.kernel.trigger.TriggerEventType.STAGE_START_EVENT;
+import static com.merchant.trigger.TriggerEventType.ACTION_START_EVENT;
+import static com.merchant.trigger.TriggerEventType.PIPE_START_EVENT;
+import static com.merchant.trigger.TriggerEventType.STAGE_START_EVENT;
 
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.NetworkUtil;
-import com.ke.merchant.kernel.common.utils.RedisKeyUtils;
-import com.ke.merchant.kernel.common.utils.ShutdownUtil;
-import com.ke.merchant.kernel.pipe.facade.IActionFacade;
-import com.ke.merchant.kernel.pipe.facade.IPipeFacade;
-import com.ke.merchant.kernel.pipe.facade.IStageFacade;
-import com.ke.merchant.kernel.pipe.pipe.Result;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.NetworkUtil;
+import com.merchant.common.utils.RedisKeyUtils;
+import com.merchant.common.utils.ShutdownUtil;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.facade.IPipeFacade;
+import com.merchant.pipe.facade.IStageFacade;
+import com.merchant.pipe.pipe.Result;
 import java.net.InetAddress;
 import java.time.Duration;
 import java.time.LocalDateTime;

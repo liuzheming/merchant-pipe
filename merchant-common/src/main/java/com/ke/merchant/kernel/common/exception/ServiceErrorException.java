@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.exception;
+package com.merchant.common.exception;
 
 public class ServiceErrorException extends RuntimeException {
     public ServiceErrorException() {

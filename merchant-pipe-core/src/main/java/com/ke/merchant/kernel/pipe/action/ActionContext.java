@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;

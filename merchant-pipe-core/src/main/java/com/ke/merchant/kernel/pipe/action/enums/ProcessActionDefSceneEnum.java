@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action.enums;
+package com.merchant.pipe.action.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

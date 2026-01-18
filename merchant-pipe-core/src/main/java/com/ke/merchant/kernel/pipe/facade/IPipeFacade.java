@@ -1,9 +1,9 @@
-package com.ke.merchant.kernel.pipe.facade;
+package com.merchant.pipe.facade;
 
-import com.ke.merchant.kernel.pipe.action.model.QueryActionListReq;
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
-import com.ke.merchant.kernel.pipe.pipe.PipeDTO;
-import com.ke.merchant.kernel.pipe.pipe.Result;
+import com.merchant.pipe.action.model.QueryActionListReq;
+import com.merchant.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.PipeDTO;
+import com.merchant.pipe.pipe.Result;
 
 import java.time.LocalDateTime;
 import java.util.List;

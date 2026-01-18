@@ -1,16 +1,16 @@
-package com.ke.merchant.kernel.pipe.stage;
+package com.merchant.pipe.stage;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.BeanCopyUtils;
-import com.ke.merchant.kernel.common.utils.MsgBuilder;
-import com.ke.merchant.kernel.pipe.action.*;
-import com.ke.merchant.kernel.pipe.facade.IActionFacade;
-import com.ke.merchant.kernel.pipe.pipe.IPipe;
-import com.ke.merchant.kernel.pipe.pipe.IPipeFactory;
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
-import com.ke.merchant.kernel.pipe.pipe.Result;
-import com.ke.merchant.kernel.trigger.ITriggerCenter;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.MsgBuilder;
+import com.merchant.pipe.action.*;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.pipe.IPipe;
+import com.merchant.pipe.pipe.IPipeFactory;
+import com.merchant.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.Result;
+import com.merchant.trigger.ITriggerCenter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -18,8 +18,8 @@ import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static com.ke.merchant.kernel.trigger.TriggerEventType.ACTION_START_EVENT;
-import static com.ke.merchant.kernel.trigger.TriggerEventType.STAGE_START_EVENT;
+import static com.merchant.trigger.TriggerEventType.ACTION_START_EVENT;
+import static com.merchant.trigger.TriggerEventType.STAGE_START_EVENT;
 
 /**
  * Create on 2023/5/1

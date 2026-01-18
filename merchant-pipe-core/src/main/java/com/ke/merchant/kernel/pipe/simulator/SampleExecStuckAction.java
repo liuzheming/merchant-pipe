@@ -1,9 +1,9 @@
-package com.ke.merchant.kernel.pipe.simulator;
+package com.merchant.pipe.simulator;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.ke.merchant.kernel.pipe.ActionStuckException;
-import com.ke.merchant.kernel.pipe.action.AbsAction;
-import com.ke.merchant.kernel.pipe.action.ActionResult;
+import com.merchant.pipe.ActionStuckException;
+import com.merchant.pipe.action.AbsAction;
+import com.merchant.pipe.action.ActionResult;
 import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;

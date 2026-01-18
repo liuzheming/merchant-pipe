@@ -1,16 +1,16 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.ke.merchant.kernel.common.constant.DbConst;
-import com.ke.merchant.kernel.common.utils.BeanCopyUtils;
-import com.ke.merchant.kernel.common.utils.BizAssertUtils;
-import com.ke.merchant.kernel.common.utils.DateUtil;
-import com.ke.merchant.kernel.common.utils.JsonUtils;
-import com.ke.merchant.kernel.pipe.db.tables.pojos.ProcessAction;
-import com.ke.merchant.kernel.pipe.db.tables.records.ProcessActionRecord;
-import com.ke.merchant.kernel.enums.ExecModeEnum;
-import com.ke.merchant.kernel.pipe.ActionStatusEnum;
-import com.ke.merchant.kernel.pipe.action.model.QueryActionReq;
+import com.merchant.common.constant.DbConst;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.BizAssertUtils;
+import com.merchant.common.utils.DateUtil;
+import com.merchant.common.utils.JsonUtils;
+import com.merchant.pipe.db.tables.pojos.ProcessAction;
+import com.merchant.pipe.db.tables.records.ProcessActionRecord;
+import com.merchant.enums.ExecModeEnum;
+import com.merchant.pipe.ActionStatusEnum;
+import com.merchant.pipe.action.model.QueryActionReq;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -22,7 +22,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static com.ke.merchant.kernel.pipe.db.Tables.PROCESS_ACTION;
+import static com.merchant.pipe.db.Tables.PROCESS_ACTION;
 
 
 /**

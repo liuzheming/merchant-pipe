@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action.model;
+package com.merchant.pipe.action.model;
 
 import java.util.List;
 import lombok.AllArgsConstructor;

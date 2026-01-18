@@ -1,7 +1,7 @@
-package com.ke.merchant.kernel.pipe.facade;
+package com.merchant.pipe.facade;
 
-import com.ke.merchant.kernel.pipe.action.dto.ActionDTO;
-import com.ke.merchant.kernel.pipe.pipe.Result;
+import com.merchant.pipe.action.dto.ActionDTO;
+import com.merchant.pipe.pipe.Result;
 
 import java.util.List;
 

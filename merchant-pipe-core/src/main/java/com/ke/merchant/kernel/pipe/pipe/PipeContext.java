@@ -1,8 +1,8 @@
-package com.ke.merchant.kernel.pipe.pipe;
+package com.merchant.pipe.pipe;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.ke.merchant.kernel.enums.ExecModeEnum;
+import com.merchant.enums.ExecModeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

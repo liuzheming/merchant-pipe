@@ -1,8 +1,8 @@
-package com.ke.merchant.kernel.pipe.stage;
+package com.merchant.pipe.stage;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
-import com.ke.merchant.kernel.pipe.pipe.Result;
+import com.merchant.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.Result;
 
 /**
  * Create on 2023/5/1

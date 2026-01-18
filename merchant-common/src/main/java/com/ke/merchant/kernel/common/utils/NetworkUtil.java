@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.utils;
+package com.merchant.common.utils;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

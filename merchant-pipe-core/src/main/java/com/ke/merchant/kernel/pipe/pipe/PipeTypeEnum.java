@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.pipe;
+package com.merchant.pipe.pipe;
 
 
 import org.apache.commons.lang3.StringUtils;

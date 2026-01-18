@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.utils;
+package com.merchant.common.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;

@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.enums;
+package com.merchant.common.enums;
 
 public enum CityOperateModeEnum {
     UNKNOWN(0),

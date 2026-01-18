@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.stage;
+package com.merchant.pipe.stage;
 
 /**
  * Create on 2023/5/1

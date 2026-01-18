@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.utils;
+package com.merchant.common.utils;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;

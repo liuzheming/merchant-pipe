@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.utils;
+package com.merchant.common.utils;
 
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;

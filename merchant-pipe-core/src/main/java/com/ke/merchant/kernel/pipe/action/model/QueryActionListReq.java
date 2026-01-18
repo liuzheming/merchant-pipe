@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action.model;
+package com.merchant.pipe.action.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,7 +28,7 @@ public class QueryActionListReq {
     /**
      * 任务包编码
      *
-     * @see com.ke.merchant.kernel.pipe.action.enums.ProcessActionDefGroupEnum
+     * @see com.merchant.pipe.action.enums.ProcessActionDefGroupEnum
      */
     private Integer actionGroupCode;
 

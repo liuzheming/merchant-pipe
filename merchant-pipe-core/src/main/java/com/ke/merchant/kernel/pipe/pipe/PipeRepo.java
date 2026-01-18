@@ -1,10 +1,10 @@
-package com.ke.merchant.kernel.pipe.pipe;
+package com.merchant.pipe.pipe;
 
-import com.ke.merchant.kernel.common.utils.BeanCopyUtils;
-import com.ke.merchant.kernel.common.utils.CheckUtil;
-import com.ke.merchant.kernel.common.utils.DateUtil;
-import com.ke.merchant.kernel.common.utils.JsonUtils;
-import com.ke.merchant.kernel.pipe.db.tables.records.ProcessActionPipeRecord;
+import com.merchant.common.utils.BeanCopyUtils;
+import com.merchant.common.utils.CheckUtil;
+import com.merchant.common.utils.DateUtil;
+import com.merchant.common.utils.JsonUtils;
+import com.merchant.pipe.db.tables.records.ProcessActionPipeRecord;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.jooq.DSLContext;
@@ -18,8 +18,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-import static com.ke.merchant.kernel.pipe.db.Tables.PROCESS_ACTION_PIPE;
-import static com.ke.merchant.kernel.pipe.pipe.PipeStatusEnum.DONE;
+import static com.merchant.pipe.db.Tables.PROCESS_ACTION_PIPE;
+import static com.merchant.pipe.pipe.PipeStatusEnum.DONE;
 
 
 /**

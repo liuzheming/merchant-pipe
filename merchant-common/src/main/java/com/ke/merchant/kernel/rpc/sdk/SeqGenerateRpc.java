@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.rpc.sdk;
+package com.merchant.rpc.sdk;
 
 import org.springframework.stereotype.Component;
 

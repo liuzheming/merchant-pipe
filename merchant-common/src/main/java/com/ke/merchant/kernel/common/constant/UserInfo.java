@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.constant;
+package com.merchant.common.constant;
 
 public class UserInfo {
     private Long ucId;

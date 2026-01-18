@@ -1,6 +1,6 @@
-package com.ke.merchant.kernel.pipe.action.model;
+package com.merchant.pipe.action.model;
 
-import com.ke.merchant.kernel.pipe.stage.StageDef;
+import com.merchant.pipe.stage.StageDef;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

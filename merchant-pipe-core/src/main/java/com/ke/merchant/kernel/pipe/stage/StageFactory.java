@@ -1,7 +1,7 @@
-package com.ke.merchant.kernel.pipe.stage;
+package com.merchant.pipe.stage;
 
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
-import com.ke.merchant.kernel.rpc.sdk.SeqGenerateRpc;
+import com.merchant.pipe.pipe.PipeContext;
+import com.merchant.rpc.sdk.SeqGenerateRpc;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 

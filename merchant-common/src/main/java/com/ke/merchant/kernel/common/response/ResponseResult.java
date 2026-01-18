@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.response;
+package com.merchant.common.response;
 
 public class ResponseResult<T> {
     private boolean success;

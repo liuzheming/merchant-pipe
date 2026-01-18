@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.enums;
+package com.merchant.enums;
 
 public enum ExecModeEnum {
     AUTO("AUTO", "auto"),

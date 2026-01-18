@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
 import java.util.List;
 

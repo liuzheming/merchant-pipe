@@ -58,7 +58,7 @@ jooq {
                 javaTimeTypes = true
             }
             target {
-                packageName = 'com.ke.merchant.kernel.pipe.db'
+                packageName = 'com.merchant.pipe.db'
                 directory = "${project.projectDir}/src/main/java"
             }
         }

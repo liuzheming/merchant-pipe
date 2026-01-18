@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.enums;
+package com.merchant.enums;
 
 public enum ActionRelationStatusEnum {
     INIT(0, "init"),

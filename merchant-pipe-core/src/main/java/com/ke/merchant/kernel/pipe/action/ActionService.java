@@ -1,16 +1,16 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
-import com.ke.merchant.kernel.common.constant.UserInfo;
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.RedisKeyUtils;
-import com.ke.merchant.kernel.common.utils.UserManager;
-import com.ke.merchant.kernel.enums.ExecModeEnum;
-import com.ke.merchant.kernel.pipe.ActionException;
-import com.ke.merchant.kernel.pipe.ActionSkipException;
-import com.ke.merchant.kernel.pipe.pipe.BuildResult;
-import com.ke.merchant.kernel.pipe.pipe.Result;
-import com.ke.merchant.kernel.pipe.stage.Stage;
-import com.ke.merchant.kernel.pipe.stage.StageFactory;
+import com.merchant.common.constant.UserInfo;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.RedisKeyUtils;
+import com.merchant.common.utils.UserManager;
+import com.merchant.enums.ExecModeEnum;
+import com.merchant.pipe.ActionException;
+import com.merchant.pipe.ActionSkipException;
+import com.merchant.pipe.pipe.BuildResult;
+import com.merchant.pipe.pipe.Result;
+import com.merchant.pipe.stage.Stage;
+import com.merchant.pipe.stage.StageFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
-import static com.ke.merchant.kernel.pipe.ActionStatusEnum.*;
+import static com.merchant.pipe.ActionStatusEnum.*;
 
 /**
  * Minimal action runtime service.

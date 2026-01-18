@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
 /**
  * Create on 2022/12/5

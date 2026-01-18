@@ -1,14 +1,14 @@
 package com.merchant.pipe.controller;
 
-import com.ke.merchant.kernel.common.response.ResponseResult;
-import com.ke.merchant.kernel.pipe.action.dto.ActionDTO;
-import com.ke.merchant.kernel.pipe.facade.IActionFacade;
-import com.ke.merchant.kernel.pipe.facade.IPipeFacade;
-import com.ke.merchant.kernel.pipe.facade.IStageFacade;
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
-import com.ke.merchant.kernel.pipe.pipe.PipeDTO;
-import com.ke.merchant.kernel.pipe.pipe.Result;
-import com.ke.merchant.kernel.pipe.stage.StageDTO;
+import com.merchant.common.response.ResponseResult;
+import com.merchant.pipe.action.dto.ActionDTO;
+import com.merchant.pipe.facade.IActionFacade;
+import com.merchant.pipe.facade.IPipeFacade;
+import com.merchant.pipe.facade.IStageFacade;
+import com.merchant.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.PipeDTO;
+import com.merchant.pipe.pipe.Result;
+import com.merchant.pipe.stage.StageDTO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -39,8 +39,8 @@ public class PipeController {
 
     @PostMapping("/{pipeId}/start-immediately")
     public ResponseResult<Result> startImmediately(@PathVariable Long pipeId) {
-        if (pipeFacade instanceof com.ke.merchant.kernel.pipe.pipe.PipeFacade) {
-            Result result = ((com.ke.merchant.kernel.pipe.pipe.PipeFacade) pipeFacade).startPipeImmediately(pipeId);
+        if (pipeFacade instanceof com.merchant.pipe.pipe.PipeFacade) {
+            Result result = ((com.merchant.pipe.pipe.PipeFacade) pipeFacade).startPipeImmediately(pipeId);
             return ResponseResult.success(result);
         }
         return ResponseResult.success(pipeFacade.startPipe(pipeId));

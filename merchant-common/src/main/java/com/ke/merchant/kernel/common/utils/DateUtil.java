@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.common.utils;
+package com.merchant.common.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -1,6 +1,6 @@
-package com.ke.merchant.kernel.pipe.stage;
+package com.merchant.pipe.stage;
 
-import com.ke.merchant.kernel.pipe.pipe.PipeContext;
+import com.merchant.pipe.pipe.PipeContext;
 
 /**
  * Create on 2023/5/1

@@ -1,6 +1,6 @@
-package com.ke.merchant.kernel.pipe;
+package com.merchant.pipe;
 
-import com.ke.merchant.kernel.common.exception.ServiceErrorException;
+import com.merchant.common.exception.ServiceErrorException;
 
 /**
  * Create on 2022/2/18

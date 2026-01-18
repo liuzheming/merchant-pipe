@@ -1,11 +1,11 @@
-package com.ke.merchant.kernel.pipe.simulator;
+package com.merchant.pipe.simulator;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.pipe.ActionStuckException;
-import com.ke.merchant.kernel.pipe.action.AbsAction;
-import com.ke.merchant.kernel.pipe.action.ActionResult;
-import com.ke.merchant.kernel.pipe.facade.IActionFacade;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.pipe.ActionStuckException;
+import com.merchant.pipe.action.AbsAction;
+import com.merchant.pipe.action.ActionResult;
+import com.merchant.pipe.facade.IActionFacade;
 import org.jooq.tools.StringUtils;
 
 import javax.annotation.Resource;

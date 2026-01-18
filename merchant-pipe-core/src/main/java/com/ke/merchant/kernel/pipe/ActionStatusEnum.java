@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.pipe;
+package com.merchant.pipe;
 
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;

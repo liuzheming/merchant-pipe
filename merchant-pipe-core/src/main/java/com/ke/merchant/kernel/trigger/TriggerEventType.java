@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.trigger;
+package com.merchant.trigger;
 
 /**
  * Create on 2023/5/2

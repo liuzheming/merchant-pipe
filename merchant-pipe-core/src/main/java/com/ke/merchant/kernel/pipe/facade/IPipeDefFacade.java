@@ -1,9 +1,9 @@
-package com.ke.merchant.kernel.pipe.facade;
+package com.merchant.pipe.facade;
 
-import com.ke.merchant.kernel.common.response.PageResult;
-import com.ke.merchant.kernel.pipe.facade.model.CreatePipeReq;
-import com.ke.merchant.kernel.pipe.facade.model.EditPipeReq;
-import com.ke.merchant.kernel.pipe.pipe.def.PipeDef;
+import com.merchant.common.response.PageResult;
+import com.merchant.pipe.facade.model.CreatePipeReq;
+import com.merchant.pipe.facade.model.EditPipeReq;
+import com.merchant.pipe.pipe.def.PipeDef;
 
 import java.util.List;
 

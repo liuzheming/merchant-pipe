@@ -1,4 +1,4 @@
-package com.ke.merchant.kernel.trigger;
+package com.merchant.trigger;
 
 import java.time.LocalDateTime;
 

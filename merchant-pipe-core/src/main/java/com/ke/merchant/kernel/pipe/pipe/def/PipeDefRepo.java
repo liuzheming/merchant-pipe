@@ -1,9 +1,9 @@
-package com.ke.merchant.kernel.pipe.pipe.def;
+package com.merchant.pipe.pipe.def;
 
-import com.ke.merchant.kernel.common.constant.DbConst;
-import com.ke.merchant.kernel.pipe.db.Tables;
-import com.ke.merchant.kernel.pipe.db.tables.pojos.ProcessActionPipeDef;
-import com.ke.merchant.kernel.pipe.db.tables.records.ProcessActionPipeDefRecord;
+import com.merchant.common.constant.DbConst;
+import com.merchant.pipe.db.Tables;
+import com.merchant.pipe.db.tables.pojos.ProcessActionPipeDef;
+import com.merchant.pipe.db.tables.records.ProcessActionPipeDefRecord;
 import org.apache.commons.lang3.StringUtils;
 import org.jooq.*;
 import org.jooq.impl.DSL;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.List;
 
-import static com.ke.merchant.kernel.pipe.db.Tables.PROCESS_ACTION_PIPE_DEF;
+import static com.merchant.pipe.db.Tables.PROCESS_ACTION_PIPE_DEF;
 
 /**
  * Create on 2023/4/30
@@ -25,7 +25,7 @@ public class PipeDefRepo {
 
     public int insert(ProcessActionPipeDef pipeDefEntity) {
         ProcessActionPipeDefRecord pipeDefRecord =
-            com.ke.merchant.kernel.common.utils.BeanCopyUtils.build(pipeDefEntity, ProcessActionPipeDefRecord.class, true);
+            com.merchant.common.utils.BeanCopyUtils.build(pipeDefEntity, ProcessActionPipeDefRecord.class, true);
         return dslContext.insertInto(Tables.PROCESS_ACTION_PIPE_DEF)
             .set(pipeDefRecord)
             .execute();
@@ -33,7 +33,7 @@ public class PipeDefRepo {
 
     public int update(ProcessActionPipeDef pipeDefEntity) {
         ProcessActionPipeDefRecord pipeDefRecord =
-            com.ke.merchant.kernel.common.utils.BeanCopyUtils.build(pipeDefEntity, ProcessActionPipeDefRecord.class, true);
+            com.merchant.common.utils.BeanCopyUtils.build(pipeDefEntity, ProcessActionPipeDefRecord.class, true);
         return dslContext.update(Tables.PROCESS_ACTION_PIPE_DEF)
             .set(pipeDefRecord)
             .where(Tables.PROCESS_ACTION_PIPE_DEF.ID.eq(pipeDefEntity.getId()))

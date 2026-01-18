@@ -1,10 +1,10 @@
-package com.ke.merchant.kernel.pipe.simulator;
+package com.merchant.pipe.simulator;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.ke.merchant.kernel.common.utils.JsonUtils;
-import com.ke.merchant.kernel.pipe.action.AbsAction;
-import com.ke.merchant.kernel.pipe.action.ActionResult;
+import com.merchant.common.utils.JsonUtils;
+import com.merchant.pipe.action.AbsAction;
+import com.merchant.pipe.action.ActionResult;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;

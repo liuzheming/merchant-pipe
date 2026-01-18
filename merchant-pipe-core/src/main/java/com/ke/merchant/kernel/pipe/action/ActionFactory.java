@@ -1,12 +1,12 @@
-package com.ke.merchant.kernel.pipe.action;
+package com.merchant.pipe.action;
 
-import com.ke.merchant.kernel.common.exception.ServiceException;
-import com.ke.merchant.kernel.common.utils.JsonUtils;
-import com.ke.merchant.kernel.common.utils.MsgBuilder;
-import com.ke.merchant.kernel.pipe.db.tables.pojos.ProcessAction;
-import com.ke.merchant.kernel.enums.ExecModeEnum;
-import com.ke.merchant.kernel.pipe.ActionStatusEnum;
-import com.ke.merchant.kernel.rpc.sdk.SeqGenerateRpc;
+import com.merchant.common.exception.ServiceException;
+import com.merchant.common.utils.JsonUtils;
+import com.merchant.common.utils.MsgBuilder;
+import com.merchant.pipe.db.tables.pojos.ProcessAction;
+import com.merchant.enums.ExecModeEnum;
+import com.merchant.pipe.ActionStatusEnum;
+import com.merchant.rpc.sdk.SeqGenerateRpc;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

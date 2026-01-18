@@ -1,8 +1,8 @@
-package com.ke.merchant.kernel.pipe.action.dto;
+package com.merchant.pipe.action.dto;
 
-import com.ke.merchant.kernel.common.utils.DateUtil;
-import com.ke.merchant.kernel.pipe.db.tables.pojos.ProcessAction;
-import com.ke.merchant.kernel.pipe.ActionStatusEnum;
+import com.merchant.common.utils.DateUtil;
+import com.merchant.pipe.db.tables.pojos.ProcessAction;
+import com.merchant.pipe.ActionStatusEnum;
 
 public class ActionDTO {
     private Long id;
