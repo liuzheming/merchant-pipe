@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/merchant-common/merchant-pipe.merchant-common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/merchant-common/merchant-pipe.merchant-common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/merchant-pipe-app/merchant-pipe.merchant-pipe-app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/merchant-pipe-app/merchant-pipe.merchant-pipe-app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/merchant-pipe-core/merchant-pipe.merchant-pipe-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/merchant-pipe-core/merchant-pipe.merchant-pipe-core.main.iml" />
+    </modules>
+  </component>
+</project>

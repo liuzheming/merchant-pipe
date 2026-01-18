@@ -1,0 +1,36 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.13.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+group = 'com.merchant'
+version = '1.0.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+def mysqlVersion = '8.0.30'
+def jooqVersion = '3.13.4'
+
+dependencies {
+    implementation project(':merchant-common')
+    implementation project(':merchant-pipe-core')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-jooq'
+    implementation "org.jooq:jooq:${jooqVersion}"
+
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'org.projectlombok:lombok:1.18.30'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    implementation 'org.redisson:redisson-spring-boot-starter:3.17.7'
+
+    runtimeOnly "io.netty:netty-resolver-dns-native-macos:4.1.100.Final:osx-aarch_64"
+    runtimeOnly "mysql:mysql-connector-java:${mysqlVersion}"
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

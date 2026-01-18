@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'merchant-pipe'
+include 'merchant-common'
+include 'merchant-pipe-core'
+include 'merchant-pipe-repo'
+include 'merchant-pipe-app'

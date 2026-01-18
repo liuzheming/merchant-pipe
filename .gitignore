@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/merchant-common/build/
+/merchant-common/build/classes/java/main/
+/merchant-pipe-app/build/
+/merchant-pipe-app/build/classes/java/main/
+/merchant-pipe-core/build/
+/merchant-pipe-core/build/classes/java/main/
+/merchant-pipe-repo/build/
+/merchant-pipe-repo/build/classes/java/main/

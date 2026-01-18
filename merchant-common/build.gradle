@@ -1,0 +1,11 @@
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.5'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.5'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'org.springframework:spring-context:5.2.25.RELEASE'
+    implementation 'org.springframework:spring-beans:5.2.25.RELEASE'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+}
